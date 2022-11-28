@@ -11,7 +11,7 @@ import { FaDiscord, FaEnvelope, FaTwitter } from "react-icons/fa";
 export default function Home() {
   return (
     <Box bg="gray.800" as="section" minH="100vh" position="relative">
-      <Box py="32" position="relative" zIndex={1}>
+      <Box py={{ base: "16", md: "32" }} position="relative" zIndex={1}>
         <Box
           maxW={{ base: "xl", md: "7xl" }}
           mx="auto"
@@ -79,7 +79,7 @@ export default function Home() {
             w="full"
             h="full"
             objectFit="cover"
-            objectPosition="top bottom"
+            objectPosition={{ base: "35% 75%", md: "top bottom" }}
             position="absolute"
           />
           <Box position="absolute" w="full" h="full" bg="blackAlpha.600" />
