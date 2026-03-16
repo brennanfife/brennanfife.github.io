@@ -3,10 +3,12 @@
  **/
 const nextConfig = {
   images: {
-    loader: "akamai",
-    path: "",
+    // Required for static hosting (next export / GitHub Pages):
+    // serve images directly from /public instead of the Image Optimization API.
+    unoptimized: true,
   },
-  assetPrefix: "./",
+  output: "export",
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
