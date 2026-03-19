@@ -15,20 +15,18 @@ export default function Home() {
           priority
           unoptimized
           sizes="100vw"
-          className="object-cover [object-position:35%_75%] md:[object-position:top]"
+          className="object-cover object-[35%_75%] md:object-[35%_75%]"
         />
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
       <div className="relative z-10 mx-auto flex max-w-7xl px-6 py-16 md:px-8 md:py-32">
-        <Card className="w-full max-w-xl bg-white/10 text-white backdrop-blur supports-[backdrop-filter]:bg-white/10">
+        <Card className="w-full max-w-xl bg-white/10 text-white backdrop-blur-sm supports-backdrop-filter:bg-white/10">
           <CardContent className="p-6">
-            <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
-              Brennan Fife
-            </h1>
+            <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">Brennan Fife</h1>
             <div className="mt-10 flex items-center gap-3">
               <Button variant="secondary" asChild>
-                <a href="mailto:brenfife@gmail.com">
+                <a href="mailto:brennan@brennan.dev">
                   <Mail />
                   Email me
                 </a>
